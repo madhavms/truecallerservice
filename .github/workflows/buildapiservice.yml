@@ -36,9 +36,7 @@ jobs:
 
       - name: Echo secrets to file
         run: |
-          echo "DB_USER=${{ secrets.DB_USER }}" >> makeintheuk-api/.env
-          echo "DB_PASSWORD=${{ secrets.DB_PASSWORD }}" >> makeintheuk-api/.env
-          echo "BUCKET_NAME=${{ secrets.BUCKET_NAME }}" >> makeintheuk-api/.env
+          echo "INSTALLATION_ID=${{ secrets.INSTALLATION_ID }}" >> truecaller-api/.env
 
       - name: Build and Push Docker Image
         uses: docker/build-push-action@v2
