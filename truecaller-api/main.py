@@ -22,7 +22,7 @@ allow_credentials=True,
 allow_methods=["*"],
 allow_headers=["*"],)
 
-@app.get("/search/")
+@app.get("/search")
 async def search_truecaller(phone_number: str = Query(..., description="The phone number to be searched")):
     try:
         response = await search_phonenumber(phone_number, "IN", INSTALLATION_ID)
