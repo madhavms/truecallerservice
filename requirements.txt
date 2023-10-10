@@ -1,0 +1,8 @@
+fastapi==0.100.1
+fastapi-socketio==0.0.9
+truecallerpy==1.0.3
+nest-asyncio==1.5.5
+python-dotenv==1.0.0
+pydantic==1.8.2
+uvicorn==0.18.3
+starlette==0.27.0
